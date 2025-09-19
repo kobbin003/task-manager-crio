@@ -9,7 +9,6 @@ const app = express();
 const PORT = 8082;
 const DB_URI = process.env.MONGODB_URL;
 
-const task = new TaskService();
 mongoose
 	.connect(DB_URI)
 	.then(() => {

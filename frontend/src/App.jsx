@@ -13,7 +13,7 @@ import TaskTable from "./components/TaskTable";
 import TaskModal from "./components/TaskModal";
 import { SERVER_URL } from "./config/config";
 import { LoadingIndicator } from "./components/LoadingIndicator";
-
+console.log("SERVER_URL: ", SERVER_URL);
 function App() {
 	const [tasks, setTasks] = useState([]);
 	const [modalOpen, setModalOpen] = useState(false);

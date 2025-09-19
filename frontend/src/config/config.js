@@ -1,1 +1,1 @@
-export const SERVER_URL = "http://localhost:8082";
+export const SERVER_URL = import.meta.env.VITE_PUBLIC_SERVER_URL;
