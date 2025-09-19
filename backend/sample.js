@@ -1,4 +1,4 @@
-export const sampleTasks = [
+const sampleTasks = [
 	{
 		title: "Study TypeScript",
 		description: "Read the documentation and make notes.",
@@ -28,3 +28,5 @@ export const sampleTasks = [
 		status: "DONE",
 	},
 ];
+
+module.exports = { sampleTasks };

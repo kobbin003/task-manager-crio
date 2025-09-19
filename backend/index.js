@@ -1,16 +1,14 @@
-const cors = require("cors");
 const express = require("express");
+const cors = require("cors");
 require("dotenv").config();
-const mongoose = require("mongoose");
+const { connect } = require("mongoose");
 const taskRoutes = require("./routes/task.route.js");
-const TaskService = require("./services/task.service.js");
 const upload = require("./config/multer.js");
 const app = express();
 const PORT = 8082;
 const DB_URI = process.env.MONGODB_URL;
 
-mongoose
-	.connect(DB_URI)
+connect(DB_URI)
 	.then(() => {
 		console.log("DB Connected!");
 		// seedDatabase();
