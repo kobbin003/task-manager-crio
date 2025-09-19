@@ -146,17 +146,3 @@ The application is configured for deployment on Render.com:
 
 - Backend API: `https://task-manager-crio-64n5.onrender.com`
 - Frontend Live URL: `https://task-manager-crio.vercel.app/`
-
-## Contributing
-
-This is a Crio learning project. For contributions:
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-ISC License
