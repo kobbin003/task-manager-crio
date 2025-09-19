@@ -5,7 +5,7 @@ const { connect } = require("mongoose");
 const taskRoutes = require("./routes/task.route.js");
 const upload = require("./config/multer.js");
 const app = express();
-const PORT = 8082;
+const PORT = process.env.PORT;
 const DB_URI = process.env.MONGODB_URL;
 
 connect(DB_URI)
